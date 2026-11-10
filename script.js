@@ -1,22 +1,8 @@
 function onClick(){
-    let myFavorite = document.getElementById("myFavorite");
-    myFavorite.style.color = "gold";
-
-    let secondBest = document.getElementById("secondBest");
-    secondBest.style.color = "silver";
-    
-    let thirdBest = document.getElementById("thirdBest");
-    thirdBest.style.color = "brown";
-
-    let goodCharacters = document.getElementsByClassName("goodCharacter");
-    for(const p of Array.from(goodCharacters)){
-        p.style.color = "red";
-    }
-    let allPElements = document.getElementsByTagName("p");
-    for(const p of Array.from(allPElements)){
-        p.style.fontWeight = "bold"
-    }
+    let text = document.getElementById("text");
+    text.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, libero ex eaque asperiores animi sit molestiae aspernatur aliquam sapiente quis!";
 }
+
 
 function init(){
     let buttons = document.getElementsByTagName("button");
